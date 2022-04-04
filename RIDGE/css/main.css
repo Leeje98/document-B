@@ -1,0 +1,449 @@
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+a {text-decoration: none; color: black;}
+img {display: block;}
+
+
+
+/* ---------header---------- */
+
+.outerHeader {
+    width: 100%;
+}
+
+.outerHeader .innerHeader {
+    width: 1030px;
+    margin: 0 auto;
+}
+
+.innerHeader .navBox {
+    width: 100%;  
+    overflow: hidden; 
+    /*로고이미지를 다음줄에 가게 해 줌*/
+}
+
+.innerHeader .navBox .bland {
+    float: left;
+}
+
+.innerHeader .navBox .gnb {
+    float: right;
+}
+
+.innerHeader .navBox .gnb ul {
+    font-size: 0; 
+    /*글자 사이의 간격을 없애기 위해서 부모 속성에 0px을 주고 본인(.innerHeader .navBox .gnb li)에 다시 잊지말고 폰트 사이즈를 준다*/
+}
+
+.innerHeader .navBox .gnb li {
+    display: inline-block;
+    font-size: 11px;
+    border-right: 1px solid black;
+    padding: 0 5px;
+    line-height: 9px;
+    /*글자높이와 동일하거나 조금 작게*/
+}
+
+.innerHeader .navBox li:last-child {
+    border: none;
+}
+
+.innerHeader .logoBox {
+    width: 100%;
+    margin: 20px 0; 
+    position: relative;
+}
+
+.innerHeader .logoBox .logo {
+       width: 200px;
+       height: 70px;
+       margin: 0 auto;
+}
+
+/* .innerHeader .logoBox .search {
+    position: absolute;
+    top: 35px;
+    right: 0;
+} */
+
+
+
+.innerHeader .logoBox .search {
+    float: right;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform:translate(0, -50%);
+}
+
+.innerHeader .logoBox .search p{
+    width: 150px;
+    height: 20px;
+    color: rgb(112, 112, 112);
+    border-bottom: 2px solid #ccc;
+    background-color: white;
+    float: left;
+    font-size: 15px;
+    letter-spacing : -1px;
+    padding: 5px 50px 5px 10px ;
+    padding-right: 30px;
+    position: relative;
+}
+
+.innerHeader .logoBox .search i {
+    float: right;
+    position: absolute;
+    right: 10px;
+    font-weight: bolder;
+    color: #1d2d51;
+    font-size: 22px;
+}
+
+
+
+
+
+
+.lnbBox {
+    width: 100%;
+    height: 30px;
+    background-color: #1d2d51;
+}
+
+.lnbBox .lnb {
+    width: 1030px;
+    margin: 0 auto;
+}
+
+.lnbBox .lnb li {
+    display: inline-block;
+    color: white;
+    line-height: 30px;
+    padding: 0 25px;
+}
+
+/*------------wrap--------------*/
+
+.wrap {
+    width: 1030px;
+    margin: 0 auto;
+}
+
+/*------------visualmain--------------*/
+
+
+
+.visualMain {
+    width: 100%;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+.visualMain .visual_left {
+    width: 700;
+    height: 530px;
+    float: left;
+    margin-right: 15px;
+}
+
+.visualMain .visual_left img {
+    width: 100%;
+    height: auto;
+}
+
+.visualMain .visual_right {
+    width: 315;
+    height: 530px;
+    float: left;
+}
+
+.visualMain .visual_right .visual_right_top {
+    margin-bottom: 15px;
+}
+
+/*------------titleBox--------------*/
+
+.titleBox {
+    width: 100%;
+    margin: 50px 0 15px 0;
+    overflow: hidden;
+}
+
+.titleBox .bar {
+    width: 400px;
+    height: 50px; 
+    float: left;
+    padding-top: 25px;
+    box-sizing: border-box;
+}
+
+.titleBox .title {
+    width: 230px;
+    height: 50px;
+    font-size: 28px;
+    font-weight: 500;
+    text-align: center;
+    line-height: 50px;
+    float: left;
+}
+
+
+/*------------choice--------------*/
+
+.choice {
+    width: 100%;
+    overflow: hidden;
+    /* margin: 15px 0; */
+}
+
+.choice .choiceMain {
+    width: 1030;
+    height: 480px;
+    margin-bottom: 50px;
+}
+
+.choice .choiceBanner {
+    width: 1030;
+    height: 120px;
+}
+
+/*------------NEW ARRIVAL--------------*/
+
+.label {
+    text-align: center;
+    color: rgb(146, 146, 146);
+    margin-bottom: 15px;
+    font-size: 15px;
+}
+
+
+#tab01,#tab02 {display: none;}
+
+.label .lab01 {
+    margin-right: 15px;
+}
+
+#tab01:checked~.sheet .sheet01 {
+    display: block;
+}
+#tab01:checked~.sheet .sheet02 {
+    display: none;
+}
+#tab02:checked~.sheet .sheet01 {
+    display: none;
+}
+#tab02:checked~.sheet .sheet02 {
+    display: block;
+}
+
+/* 
+.sheet div {
+    display: none;
+} */
+
+.sheet .sheet01 div {
+    float: left;
+    /* overflow: hidden; */
+}
+.sheet .sheet01 .newleft {
+    width: 505px;
+    height: 730px;
+    overflow: hidden;
+    margin-right: 15px;
+}
+
+.sheet .sheet01 .newleft .newleft_top {
+    float: left;
+    margin: 15px 0;
+}
+
+.sheet .sheet01 .newleft .newleft_bottom div{
+    float: left;
+}
+.sheet .sheet01 .newleft .newleft_bottom .new02 {
+    margin-right: 15px;
+}
+
+
+.sheet .sheet01 .newright {
+    width: 505px;
+    height: 665px;
+    overflow: hidden;
+    
+}
+
+.sheet .sheet01 .newright .newright_top div{
+    float: left;
+    margin: 15px 0;
+}
+
+.sheet .sheet01 .newright .newright_top .new04 {
+    margin-right: 15px;
+}
+
+.sheet .sheet01 .newright .newright_bottom div {
+    float: left;
+}
+
+.sheet .sheet02 div {
+    width: 1030px;
+    height: 665px;
+    margin: 15px 0;
+    background-color: #ddd;
+    font-size: 20px;
+    text-align: center;
+    line-height: 660px;
+}
+
+
+/*------------MULTI SHOP--------------*/
+
+.multi {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.multi div{
+    float: left;
+    /* border: 1px solid #ccc;
+    box-sizing: border-box; */
+}
+
+.multi .multi_left {
+    width: 340px;
+    height: 395px;
+    margin-right: 20px;
+}
+
+.multi .multi_left .mrlti_left_top {
+    margin-bottom: 20px;
+}
+
+.multi .multi_left div {
+    float: left;
+}
+
+.multi .multi_center div {
+    width: 310px;
+    height: 400px;
+    float: left;
+}
+
+.multi .multi_center {
+    margin-right: 20px;
+}
+
+.multi .multi_right {
+    width: 340px;
+    height: 395px;
+}
+
+.multi .multi_right .mrlti_right_top {
+    margin-bottom: 20px;
+}
+
+.multi .multi_right div {
+    float: left;
+}
+
+
+/*------------BRAND CODI--------------*/
+
+.brandcobi {
+    width: 100%;
+    height: 170px;
+}
+
+.brandcobi div {
+    float: left;
+    margin: 20px 0 50px 0;
+    overflow: hidden;
+}
+
+.brandcobi .brandcobi_left {
+    margin-right: 20px;
+}
+
+/*------------fixedMenu--------------*/
+
+.fixedMenu {
+    font-size: 14px;
+    line-height: 30px;
+    text-align: center;
+    position: fixed;
+    top: 195px;
+    right: 20px;
+    display: block;
+    width: 120px;
+    height: 30px;
+    background-color: #1d2d51;
+    color: white;
+}
+
+
+
+/*------------footer--------------*/
+
+.footerWarp {
+    width: 1030px;
+    margin: 0 auto;
+}
+
+.footerWarp .footer_box {
+    width: 100%;
+    overflow: hidden;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 40px;
+}
+
+.footerWarp .footer_box .nav {
+    font-size: 14px;
+    line-height: 50px;
+    float: left;
+}
+
+.footerWarp .footer_box .nav a {
+    margin-right: 10px;
+    color: rgb(118, 118, 118);
+}
+
+.footerWarp .footer_box .sns {
+    float: right;
+}
+.footerWarp .footer_box .sns a {
+    font-size: 25px;
+    line-height: 50px;
+    color: rgb(118, 118, 118);
+    margin-left: 5px;
+}
+
+.footerWarp .bottom {
+}
+
+.footerWarp .bottom p {
+    font-size: 12px;
+    color: rgb(118, 118, 118);
+    letter-spacing: -0.025em;
+    float: left;
+}
+
+#link {
+   float: right;
+   font-size: 14px;
+   line-height: 25px;
+   border: 1px solid rgb(118, 118, 118);
+   text-align: left;
+   padding: 0 50px 0 5px;
+   color: rgb(118, 118, 118);
+}
+
+
+
+
+
+
+
+
+
