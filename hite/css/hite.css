@@ -1,0 +1,181 @@
+* {margin: 0; padding: 0;}
+li {list-style: none;}
+img {display: block;}
+a {text-decoration: none;}
+
+
+/* ------------------header--------------- */
+
+.logoBox {
+    width: 100%;
+    background-color: #f5f5f5;
+}
+
+.logoBox div {
+    width: 110px;
+    height: 38px;
+    margin: 0 auto;
+}
+
+.gnb {
+    width: 1070px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.gnb .gnbMain {
+    float: left;
+}
+
+.gnb .gnbMain li {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 100px;
+    margin-right: 80px;
+    float: left;
+}
+
+.gnb .gnbMain li a {
+    color: black;
+}
+
+.gnb .gnbSide {
+    float: right;
+    top: 50px;
+}
+
+.gnb .gnbSide li {
+    font-size: 12px;
+    float: left;
+    font-weight: bold;
+    margin-right: 20px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #929292;
+}
+
+.gnb .gnbSide li:nth-child(3) {
+    margin: 0;
+}
+
+.gnb .gnbSide li a {
+    color: #929292;
+}
+
+/* ------------------header--------------- */
+
+
+
+/* ------------------mainVisual--------------- */
+
+.mainVisual img {
+    width: 100%;
+}
+
+
+/* ------------------mainVisual--------------- */
+
+
+
+/* ------------------mainContent--------------- */
+
+.mainContent {
+    width: 100%;
+    background-color: #f5f5f5;
+    height: 1000px;
+}
+
+.mainContent .containner {
+    width: 1070px;
+    margin: 0 auto;
+}
+
+.mainContent .containner h2 {
+    font-weight: lighter;
+    padding: 50px 0 30px;
+}
+
+.mainContent .containner .bannerBox {
+    width: 1070px;
+    height: 740px;
+    margin-bottom: 200px;
+}
+
+.mainContent .containner .bannerBox .top {
+    height: 540px;
+    float: left;
+}
+
+.mainContent .containner .bannerBox .imgBox {
+    margin: 0 10px 10px 0;
+}
+
+
+
+
+.mainContent .containner .bannerBox .top .content_top_01 {
+    width: 270px;
+    float: left;
+}
+
+.mainContent .containner .bannerBox .top .content_top_01 .imgBox01{
+    width: 260px;
+    height: 260px;
+    background: url(../img/img_01.jpg);
+    position: relative;
+}
+
+.mainContent .containner .bannerBox .top .content_top_01 .imgBox01 .imgBox01_1{
+    position: absolute;
+    background-color: blue;
+    left: 0; bottom: -260px;
+}
+
+.mainContent .containner .bannerBox .top .content_top_01 .imgBox01 .imgBox01_2 {
+     font-size: 16px;
+     font-weight: bold;
+     color: white;
+     text-align: center;
+     position: absolute;
+     left: -200px; top: 0;
+     transition: all 0.2s 0.3s;
+}
+
+
+ .mainContent .containner .bannerBox .top .content_top_01 .imgBox01:hover .imgBox01_1 {
+     bottom: 0;
+ }
+ 
+ .mainContent .containner .bannerBox .top .content_top_01 .imgBox01:hover .imgBox01_2 {
+     left: 0;
+ }
+
+
+
+
+.mainContent .containner .bannerBox .top .content_top_02 {
+    width: 270px;
+    float: left;
+}
+
+.mainContent .containner .bannerBox .top .content_top_03 {
+    width: 530px;
+    float: left;
+}
+
+.mainContent .containner .bannerBox .top .content_top_03 .imgBox {
+   
+    float: left;
+}
+
+.mainContent .containner .bannerBox .top .imgBox04,
+.mainContent .containner .bannerBox .top .imgBox06 {
+    margin-right: 0;
+}
+
+.mainContent .containner .bannerBox .bottom .imgBox{
+    float: left;
+}
+
+.mainContent .containner .bannerBox .bottom .imgBox09 {
+    margin-right: 0;
+}
