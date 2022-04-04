@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0328-layout_test</title>
+    <style>
+        .headerWrap {
+            width: 1280px;
+            background: #f2f2f2;
+            margin: 0 auto;
+        }
+
+        .headerWrap .gnb {
+            width: 400px;
+            margin: 0 0 5px 0;
+            background: #ddd;
+            float: right;
+        }
+
+        .headerWrap .logo {
+            width: 150px;
+            height: 150px;
+            clear: right;
+            margin: 5px auto;
+            background: #ddd;
+        }
+
+        .headerWrap .lnb {
+            background: #ddd;
+            text-align: center;
+        }
+
+        /* .bady main {
+            width: 1280px;
+            margin: 0 auto;
+        } */
+
+
+        .visualMain {
+            height: 320px;
+            margin: 10px auto;
+            background: #f2f2f2;
+        }
+
+        .visualMain div {
+            width: 1280px;
+            height: 320px;
+            margin: 0 auto;
+            background: #ddd;
+            font-size: 40px;
+            text-align: center;
+        }
+
+        .container {
+            width: 1280px;
+            margin: 0 auto;
+            background: #f2f2f2;
+            /* padding: 0 -5px; */
+        }
+
+        .container .event {
+            /* display: inline-block; */
+            height: 700px;
+            /* overflow: hidden; */
+            padding: 0 5px 5px 5px;
+            margin: 0 5px;
+        }
+
+        .container .event01 {
+            width: 617px;
+            height: 698px;
+            margin: 0 5px;
+            float: left;
+            background: #ddd;
+            border: 1px solid #333;
+        }
+
+        .container .event02 {
+            width: 617px;
+            height: 342px;
+            margin: 0 5px 5px;
+            float: left;
+            background: #ddd;
+            border: 1px solid #333;
+        }
+
+        .container .event03 {
+            width: 617px;
+            height: 342px;
+            margin: 5px;
+            float: left;
+            background: #ddd;
+            border: 1px solid #333;
+        }
+
+        .container .product {
+            width: 1280px;
+            margin: 0 auto;
+        }
+
+        .container .product>div {
+            background: #333;
+        }
+
+
+        .container .product * {
+            float: left;
+        }
+
+        .container .product .left {
+            width: 640px;
+            height: 700px;
+        }
+
+        .container .product .left>div {
+            width: 310px;
+            height: 342px;
+            /* float: left; */
+            background: #FF0;
+            border: 1px solid #333;
+        }
+
+        .container .product .product05 {
+            width: 617px;
+            height: 698px;
+            margin: 0 5px;
+            float: right;
+            background: #ddd;
+            border: 1px solid #333;
+        }
+
+
+
+        .wideBanner {
+            margin: 750px 0 10px;
+            height: 320px;
+            background: #ddd;
+            font-size: 50px;
+            font-weight: 800;
+            font-display: mi;
+            text-align: center;
+        }
+
+        .bestin {
+            width: 1280px;
+            margin: 0 auto;
+            padding: 0 auto;
+            background: #f2f2f2;
+        }
+
+        .bestin .best {
+            margin: 5px 5px 5px 340px;
+        }
+
+        .bestin .best>div {
+            float: left;
+            width: 220px;
+            height: 220px;
+            background: #ddd;
+            border: 1px solid #333;
+            margin: 5px;
+        }
+
+        .bestin .in>div {
+            float: left;
+            width: 250px;
+            height: 250px;
+            background: #ddd;
+            border: 1px solid #333;
+        }
+
+        .footerWarp {
+            clear: both;
+            background: #333;
+        }
+
+        .footerWarp div {
+            width: 1280px;
+            height: 330px;
+            margin: 20px auto 0 auto;
+            background: #ddd;
+            border: 1px solid #333;
+            padding: 5px;
+            float: left;
+        }
+
+        .footerWarp .logo {
+            width: 280px;
+            height: 280px;
+            margin: 0 auto;
+
+        }
+
+        .footerWarp .copyright {
+            width: 1000px;
+            height: 280px;
+            margin: 0 auto;
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="allWarp">
+
+        <header class="headerWrap">
+            <div class="gnb">
+                gnb
+            </div>
+            <div class="logo">
+                logo
+            </div>
+            <div class="lnb">
+                lnb
+            </div>
+        </header>
+
+
+
+        <main>
+
+            <section class="visualMain">
+                <div>visual_main</div>
+            </section>
+
+            <section class="container">
+                <section class="event">
+                    <div class="event01">event01</div>
+                    <div class="event02">event02</div>
+                    <div class="event03">event03</div>
+                </section>
+
+                <section class="product">
+                    <div class="left">
+                        <div>product01</div>
+                        <div>product02</div>
+                        <div>product03</div>
+                        <div>product04</div>
+                    </div>
+                    <div class="product05">product05</div>
+                </section>
+            </section>
+
+            <section class="wideBanner">
+                <div>wide_banner</div>
+            </section>
+
+            <div class="bestin">
+                <section class="best">
+                    <div>best01</div>
+                    <div>best02</div>
+                    <div>best03</div>
+                    <div>best04</div>
+                    <div>best05</div>
+                    <div>best06</div>
+                    <div>best07</div>
+                    <div>best08</div>
+                </section>
+
+                <section class="in">
+                    <div>in01</div>
+                    <div>in02</div>
+                    <div>in03</div>
+                    <div>in04</div>
+                    <div>in05</div>
+                    <div>in06</div>
+                    <div>in07</div>
+                    <div>in08</div>
+                    <div>in09</div>
+                    <div>in10</div>
+                </section>
+            </div>
+
+        </main>
+
+
+
+        <footer class="footerWarp">
+
+            <div class="logo">
+                logo
+            </div>
+
+            <div class="copyright">
+                copyright
+            </div>
+
+        </footer>
+
+    </div>
+</body>
+
+</html>

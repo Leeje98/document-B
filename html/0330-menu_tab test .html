@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu_Tab_tesk</title>
+    <style>
+        *{ margin: 0; padding: 0;}
+
+        input {display: none;}
+
+        #tab01:checked ~ .sheet .sheet01 {display: block;}
+        #tab02:checked ~ .sheet .sheet02 {display: block;}
+        #tab03:checked ~ .sheet .sheet03 {display: block;}
+        #tab04:checked ~ .sheet .sheet04 {display: block;}
+        #tab05:checked ~ .sheet .sheet05 {display: block;}
+
+        .tapMenu .label,
+        .tapMenu .sheet {
+        float: left;
+        }
+        
+        .label label {
+            display: block;
+            width: 150px;
+            height: 100px;
+            background-color: bisque;
+            font-size: 25px;
+            text-align: center;
+            line-height: 100px;
+            border: 1px solid #333;
+        }
+
+        .sheet div {
+            display: none;
+        }
+
+        .sheet .img {
+            width: 600px;
+            height: 500px;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <section class="tapMenu">
+
+        <input type="radio" id="tab01" name="radio" checked>
+        <input type="radio" id="tab02" name="radio">
+        <input type="radio" id="tab03" name="radio">
+        <input type="radio" id="tab04" name="radio">
+        <input type="radio" id="tab05" name="radio">
+
+        
+
+        <div class="label">
+            <label for="tab01" class="lab01">이탈리아</label>
+            <label for="tab02" class="lab02">멕시코</label>
+            <label for="tab03" class="lab03">체코</label>
+            <label for="tab04" class="lab04">그리스</label>
+            <label for="tab05" class="lab05">일본</label>
+        </div>
+
+        <div class="sheet">
+            <div class="sheet01">
+                 <img src="./img/Country/ItalyVenice.jpg" alt="이탈리아">
+            </div>
+            <div class="sheet02">
+                <img src="./img/Country/MexicoCancun.jpg" alt="멕시코">
+            </div>
+            <div class="sheet03">
+                <img src="./img/Country/Prague.jpg" alt="체코">
+            </div>
+            <div class="sheet04">
+                <img src="./img/Country/Santorini.jpg" alt="그리스">
+            </div>
+            <div class="sheet05">
+                <img src="./img/Country/Japan.jpg" alt="일본">
+            </div>
+        </div>
+
+    </section><!--news-->
+
+
+    
+</body>
+</html>

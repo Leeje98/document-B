@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="kp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        * {margin: 0; padding: 0;}
+
+        section {
+            margin: 50px 0;
+        }
+
+        div {
+            background-color: yellow;
+            width: 300px;
+            height: 200px;
+        }
+
+        span {
+            background-color: yellow;
+            width: 300px;
+            height: 200px;
+            /* display: block; */
+            display: inline-block; /* float이 가진 속성으로 인해 생기는 문제점을 해결하기 위해 사용하는 태그 */
+            /* float: ==inline-block 이 float을 대신해서 쓰는거기 때문에 중복해서 쓰면 안됨 */
+        }
+
+        .label {
+            width: 350px;
+            font-size: 0;
+            /* 인라인속성의 박스사이 자간을 없애기01. 부모속성에서 폰트사이즈 없애기 */
+        }
+
+        .label label {
+            width: 100px;
+            height: 50px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            display: inline-block;
+            text-align: center;
+            line-height: 50px;
+            font-size: 16px;
+            /* 인라인속성의 박스사이 자간을 없애기02. 본인속성에서 폰트사이즈 다시주기 */
+        }
+
+        a {
+            text-decoration: none; 
+            color: black;
+            display: block;
+        }
+        .gnb {
+            width: 500px;
+        }
+        .gnb li { 
+            float: left;
+            padding: 20px;
+        }
+
+        
+    </style>
+</head>
+<body>
+    
+    <section>
+        <div>box01</div>
+        <div>box02</div>
+        <div>box03</div>
+    </section>
+
+    <section>
+        <span>span01</span>
+        <span>span02</span>
+        <span>span03</span>
+    </section>
+
+    <div class="label">
+        <label class="lab01">label01</label>
+        <label class="lab02">label02</label>
+        <label class="lab03">label03</label>
+    </div>
+
+    <div class="gnb">
+        <ul>
+            <ul>
+                <li><a href="#">login</a></li>
+                <li><a href="#">join</a></li>
+                <li><a href="#">site_map</a></li>
+                <li><a href="#">search</a></li>
+            </ul>
+        </ul>
+    </div>
+
+</body>
+</html>

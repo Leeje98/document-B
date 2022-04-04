@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            /* width: 1000px;
+            position: relative;
+            margin: 0 auto; */
+            overflow: hidden;
+            /* 화면 밖으로 내보낼때 밑에 스크롤이 생기므로 overflow: hidden으로 해결한다 */
+        }
+
+        #popup {
+            display: none;
+        }
+
+        #popup:checked~.popupBox {
+            display: block;
+        }
+
+        #popup~.popupBox {
+            display: none;
+        }
+
+        .popupBox {
+            width: 300px;
+            height: 350px;
+            border: 1px solid black;
+            padding: 20px;
+            position: absolute;
+            top: 300px;
+            left: 300px;
+        }
+
+        #wingBanner {
+            display: none;
+        }
+
+        #wingBanner:checked~.wingBox {
+            right: -200px;
+        }
+
+        #wingBanner~.wingBox {
+            right: 0;
+        }
+
+        #wingBanner:checked~.wingBox .closeBtn {
+            display: block;
+        }
+
+        #wingBanner:checked~.wingBox .openBtn {
+            display: none;
+        }
+
+        #wingBanner~.wingBox .openBtn {
+            display: block;
+        }
+
+        #wingBanner~.wingBox .closeBtn {
+            display: none;
+        }
+
+        .wingBox {
+            width: 300px;
+            position: absolute;
+            top: 200px;
+            right: -400px;
+            transition: all 0.3s 0.1s;
+            /* 한박자 늦게 움직이게 되면 더 시선을 끌 수 있다(강조효과)*/
+        }
+
+        .wingBox .label {
+            display: block;
+            width: 100px;
+            float: left;
+        }
+
+        .wingBox .wing {
+            float: left;
+            width: 200px;
+            height: 500px;
+            border: 1px solid black;
+            box-sizing: border-box;
+            background-color: #ccc;
+            /* transition: width, 0.3s; */
+        }
+    </style>
+</head>
+
+<body>
+
+    <input type="checkbox" id="popup" checked>
+
+    <div class="popupBox">
+        <div class="popupImg">
+            <img src="img/popupimg.jpg" alt="팝업이미지(로딩중)">
+        </div>
+        <label for="popup" class="popupLavel">닫기</label>
+    </div>
+
+
+    <input type="checkbox" id="wingBanner" checked>
+
+    <aside class="wingBox">
+        <label for="wingBanner" class="closeBtn">닫기</label>
+        <label for="wingBanner" class="openBtn">열기</label>
+        <div class="wing">wing_banner</div>
+    </aside>
+
+
+</body>
+
+</html>
