@@ -1,0 +1,598 @@
+
+
+* {margin: 0; padding: 0; list-style: none;}
+img {display: block;}
+a {text-decoration: none; }
+/* li {list-style: none} */
+
+
+
+/*-----------------header-----------------*/
+
+#header {
+    width: 100%;
+}
+
+#header .nav {
+    width: 1060px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#header .nav ul {
+    float: right;
+    margin: 5px 0;
+}
+
+#header .nav li {
+    float: left;
+    font-size: 14px;
+    line-height: 20px;
+    border-right: 1px solid #ccc;
+    padding: 0 15px;
+    
+}
+
+#header .nav li i {
+    font-size: 20px;
+    /* line-height: 20px; */
+    color: #f00;
+    letter-spacing: -0.25em;
+}
+
+#header .nav li:nth-child(4) {
+    border: none;
+}
+
+#header .gnb {
+    width: 100%;
+    height: 80px;
+    background-color: #f2f2f2;
+}
+
+
+#header .gnb .gnbBox {
+    width: 1060px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#header .gnb .gnbBox ul {
+    font-size: 16px;
+    font-weight: bolder;
+    float: right;
+}
+
+#header .gnb .gnbBox ul li {
+    float: left;
+    margin-right: 30px;
+    line-height: 80px;
+}
+
+#header .gnb .gnbBox ul li:last-child {
+    margin-right: 330px;
+}
+
+
+
+#header .gnb .gnbBox .search {
+    float: right;
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform:translate(0, -50%);
+}
+
+#header .gnb .gnbBox .search p{
+    width: 250px;
+    height: 20px;
+    border: 1px solid #ccc;
+    background-color: white;
+    float: left;
+    font-size: 16px;
+    padding: 5px 50px 5px 10px ;
+    font-weight: bolder;
+    padding-right: 30px;
+    position: relative;
+}
+
+#header .gnb .gnbBox .search i {
+    float: right;
+    position: absolute;
+    right: 10px;
+    font-weight: bolder;
+}
+
+#header .lnb {
+    width: 100%;
+    height: 50px;
+    background-color: black;
+}
+
+#header .lnb .lnbBox {
+    width: 1060px;
+    margin: 0 auto;
+    position: relative;
+}
+
+#header .lnb .lnbBox img {
+    float: left;
+    position: absolute;
+    bottom: -30px;
+}
+
+#header .lnb .lnbBox ul li {
+    color: white;
+    float: left;
+    line-height: 50px;
+    font-weight: bold;
+    padding: 0 30px;
+}
+
+#header .lnb .lnbBox ul li:first-child {
+    margin-left: 122px;
+}
+
+/*-----------------header-----------------*/
+
+
+
+
+
+
+/*-----------------warp-----------------*/
+
+.warp {
+    width: 100%;
+    height: 3000px;
+    background: url(../img/bg_img.jpg) repeat-x;
+    /* 밑에 두줄의 축소형 */
+    /* background-image: url(../img/bg_img.jpg);
+    background-repeat: repeat-x; 
+    repeat-x ----- x축방향으로 이미지 반복
+    no-repeat ---- 반복하지 않음*/
+    /* background-attachment: fixed; */
+    /* 뒷배경인 이미지를 픽스 하기 */
+    /* background-position: center;
+    background-size: cover; */
+}
+
+
+/*-----------------vesual_main-----------------*/
+
+#tab01, #tab02, #tab03, #tab04, #tab05 {display: none;} 
+/*동글동글한 버튼(radio버튼) 안보이게*/
+/*기능버튼을 안보이게 하면 그 기능 자체를 아예 못쓰게 되지만, 여기선 radio버튼 기능을 label에 상속해 주었기 때문에 label로 대신하여 쓸 수 있다*/
+
+#tab01:checked ~ .sheet .sheet01 {display: block;}
+#tab02:checked ~ .sheet .sheet02 {display: block;}
+#tab03:checked ~ .sheet .sheet03 {display: block;}
+#tab04:checked ~ .sheet .sheet04 {display: block;}
+#tab05:checked ~ .sheet .sheet05 {display: block;}
+
+.visualMain {
+    width: 1060px;
+    height: 530px;
+    margin: 0 auto;
+}
+
+.visualMain .sheet div {
+    width: 1060px;
+    height: 480px;
+    display: none;
+}
+
+.visualMain .labelMain {
+    width: 1060px;
+    height: 50px;
+    overflow: hidden;
+}
+
+.visualMain .labelMain label {
+    display: block;
+    width: 20%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    float: left;
+}
+
+#tab01:checked ~ .labelMain .labMain01 {
+    background-color: red;
+    color: white;
+}
+#tab02:checked ~ .labelMain .labMain02 {
+    background-color: red;
+    color: white;
+}
+#tab03:checked ~ .labelMain .labMain03 {
+    background-color: red;
+    color: white;
+}
+#tab04:checked ~ .labelMain .labMain04 {
+    background-color: red;
+    color: white;
+}
+#tab05:checked ~ .labelMain .labMain05 {
+    background-color: red;
+    color: white;
+}
+
+/*-----------------vesual_main-----------------*/
+
+
+
+/*-----------------issueItem-----------------*/
+
+.issueItem h2 {
+    width: 1060px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+.issueItem {
+    width: 1250px;
+    height: 1160px;
+    margin: 0 auto;
+    /* overflow: hidden; */
+}
+
+.issueItem .btn_left {
+    width: 95px;
+    height: 1160px;
+    float: left;
+    position: relative;
+}
+
+.issueItem .btn_left>div {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.issueItem .btn_left img {
+    line-height: 1160px;
+}
+
+.issueItem .bunnerBox {
+    width: 1060px;
+    margin: 0 auto;
+    float: left;
+}
+
+.issueItem .bunnerBox .issueItem_top {
+}
+
+.issueItem .bunnerBox .issueItem_top .issueItem_top_left {
+    width: 50%;
+    float: left;
+}
+
+.issueItem .bunnerBox .issueItem_top .issueItem_top_right {
+    width: 50%;
+    float: left;
+}
+
+.issueItem .bunnerBox .issueItem_top .issueItem_top_right div{
+    float: left;
+}
+
+
+
+.issueItem .bunnerBox .issueItem_bottom .issueItem_bottom_left {
+    width: 50%;
+    float: left;
+}
+
+.issueItem .bunnerBox .issueItem_bottom .issueItem_bottom_left div{
+    float: left;
+}
+
+.issueItem .bunnerBox .issueItem_bottom .issueItem_bottom_right {
+    float: left;
+}
+
+
+.issueItem .btn_right {
+    width: 95px;
+    height: 1160px;
+    float: left;
+    position: relative;
+}
+
+.issueItem .btn_right>div {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+
+
+/*-----------------issueItem-----------------*/
+
+
+
+/*-----------------activity-----------------*/
+
+.activity h2 {
+    width: 1060px;
+    margin: 0 auto;
+    text-transform: uppercase;
+    padding: 15px 0;
+}
+
+
+.activity .activityBox {
+    width: 1250px;
+    margin: 0 auto;
+}
+
+
+.activity .activityBox .btn_left {
+    width: 95px;
+    height: 383px;
+    float: left;
+    position: relative;
+}
+
+.activity .activityBox .btn_left>div {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.activity .activityBox .activityBunner {
+    float: left;
+}
+
+
+
+.activity .activityBox .btn_right {
+    width: 95px;
+    height: 383px;
+    float: left;
+    position: relative;
+}
+
+.activity .activityBox .btn_right>div {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+
+/*-----------------activity-----------------*/
+
+
+/*-----------------newarrival-----------------*/
+
+.newarrival {
+    width: 1060px;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+#check {display: none;}
+#check ~ .title_box .label_m {display: block;}
+#check ~ .title_box .label_p {display: none;}
+#check ~ .sheet02 {display: none;}
+
+#check:checked ~ .title_box .label_m {display: none;}
+#check:checked ~ .title_box .label_p {display: block;}
+#check:checked ~ .sheet02 {display: block;}
+
+
+
+.newarrival .title_box {
+    width: 100%;
+}
+
+.newarrival .title_box .label_m {
+    float: right;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 15px;
+}
+.newarrival .title_box .label_p {
+    float: right;
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+.newarrival div {
+    float: left;
+}
+
+.newarrival div h2 {
+    text-transform: uppercase;
+    padding: 15px;
+    float: left;
+}
+
+.newarrival .sheet01 {
+    height: 550px;
+}
+
+.newarrival .sheet01 div {
+    float: left;
+}
+
+.newarrival .sheet02 {
+    display: none;
+}
+.newarrival .sheet02 div {
+    float: left;
+}
+
+/*-----------------newarrival--------------------*/
+
+
+
+
+
+
+
+
+/*----------------btnTop------------------*/
+
+.btnTop {
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 30px;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+}
+
+/*----------------btnTop------------------*/
+
+
+
+
+
+/*----------------footer------------------*/
+
+.footer {
+    width: 100%;
+    background-color: #1a1a1a;
+    height: 900px;
+}
+
+.footer .footerWarp {
+    text-transform: uppercase;
+    width: 1060px;
+    margin: 0 auto;
+}
+
+.footer .footerWarp h3{
+    color: white;
+    padding-bottom: 15px;
+}
+
+.footer .footerWarp .fnb05 .fnb05_1 {
+    margin-bottom: 20px;
+}
+
+.footer .footerWarp .fnb05 h3 {
+    padding-bottom: 5px;
+}
+
+.footer .footerWarp h4 {
+    font-size: 25px;
+    color: #bababa;
+}
+
+.footer .footerWarp .fnb {
+    height: 300px;
+    padding: 50px 0 30px;
+}
+
+.footer .footerWarp .fnb a {
+    color: #b5b5b5;
+}
+
+.footer .footerWarp .fnb p {
+    color: #b5b5b5;
+}
+
+.footer .footerWarp .fnb li {
+    margin: 20px 0;
+}
+
+.footer .footerWarp .fnb>div {
+    float: left;
+    width: 20%;
+}
+
+.footer .footerWarp .footer_01 {
+    height: 200px;
+}
+
+.footer .footerWarp .footer_01 .storeLocation {
+    width: 50%;
+    height: 200px;
+    float: left;
+    text-align: center;
+}
+
+.footer .footerWarp .footer_01 .storeLocation h3 {
+    padding-bottom: 30px;
+}
+
+.footer .footerWarp .footer_01 .storeLocation a {
+    color: #f2f2f2;
+    font-weight: bold;
+    padding: 10px 60px;
+    background-color: #f00;
+    border-radius: 5px;
+}
+
+.footer .footerWarp .footer_01 .sns {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.footer .footerWarp .footer_01 .sns h3 {
+
+}
+
+.footer .footerWarp .footer_01 .sns div {
+    top: 50%;
+    left: 350px
+}
+
+.footer .footerWarp .footer_01 .sns div img {
+    float: left;
+    padding: 15px;
+}
+
+.footer .footerWarp .footer_01 .sns div img:nth-child(1){
+    margin-left: 70px;
+}
+
+.footer .footerWarp .footer_02 {
+    height: 150px;
+}
+
+.footer .footerWarp .footer_02 .footer_left {
+    width: 60%;
+    float: left;
+}
+
+.footer .footerWarp .footer_02 p {
+    color: #b5b5b5;
+    font-size: 13px;
+    letter-spacing: -0.025em;
+}
+
+.footer .footerWarp .footer_02 .footer_right {
+    width: 40%;
+    float: left;
+}
+
+.footer .footerWarp .footer_03 {
+}
+
+.footer .footerWarp .footer_03 img {
+    width: 50px;
+    float: left;
+    padding-right: 20px;
+}
+
+.footer .footerWarp .footer_03 p {
+    float: left;
+    color: #b5b5b5;
+    font-size: 13px;
+    letter-spacing: -0.025em;
+    line-height: 25px;
+}
