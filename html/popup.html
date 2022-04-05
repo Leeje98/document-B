@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>popup</title>
+    <style>
+        * {
+            margin: 0; padding: 0;
+        }
+        body {overflow: hidden;}
+        #popup {
+            display: none;
+        }
+        #popup:checked ~ .popupBox {display: block;}
+        /* ~ : 나와 같은 레벨의 아래쪽에 있는 태그 중에서 .popup을 찾아라. */
+        #popup ~ .popupBox {display: none;}
+
+        .popupBox {
+            width: 300px; height: 350px;
+            border: 1px solid black;
+            padding: 20px;
+            position: absolute; top: 300px; left: 300px;
+        }
+
+        #wingBanner {
+            display: none;
+        }
+        #wingBanner:checked~.wingBox {
+            right: 0;
+        }
+        #wingBanner~.wingBox {
+            right: -200px;
+        }
+        #wingBanner:checked~.wingBox .closeBtn {
+            display: block;
+        }
+        #wingBanner:checked~.wingBox .openBtn {
+            display: none;
+        }
+        #wingBanner~.wingBox .closeBtn {
+            display: none;
+        }
+        #wingBanner~.wingBox .openBtn {
+            display: block;
+        }
+        .wingBox {
+            position: absolute; top: 200px; right: -200px; 
+            transition: all 0.3s;
+        }
+        .wingBox label {
+            float: left;
+            width: 70px; height: 30px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            line-height: 30px;
+            border-radius: 10px 0 0 10px;
+        }
+        .wingBox .wing {
+            float: left;
+            width: 200px;
+            height: 500px;
+            text-align: center;
+            border: 1px solid black;
+            box-sizing: border-box;
+            /* transition: width, 0.3s; */
+            /* transition은 원본에 주자 */
+        }
+    </style>
+</head>
+<body>
+    <input type="checkbox" id="popup" checked>
+    <!-- 제어를 필요로 하는 id 값을 가진 태그는 가장 위에 와야 한다. -->
+    <!-- 같은 부모의 형제들에 적용된다. -->
+    <div class="popupBox">
+        <div class="popupImg">
+            <img src="./img/img01.jpg" alt="팝업이미지(로딩중)">
+        </div>
+        <label for="popup" class="popupLabel">닫기</label>
+    </div>
+    
+
+
+
+    <input type="checkbox" id="wingBanner" checked>
+    <aside class="wingBox">
+        <label for="wingBanner" class="closeBtn">닫기</label>
+        <label for="wingBanner" class="openBtn">열기</label>
+        <div class="wing">wing_banner</div>
+    </aside>
+</body>
+</html>
