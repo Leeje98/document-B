@@ -1,0 +1,98 @@
+* { margin: 0; padding: 0;}
+
+
+header {
+    width: 100%;
+    height: 300px;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.visualMain {
+    width: 1000px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+.visualMain img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.rollingBanner {
+    /* width: 100%; */
+    /* 화면크기에 맞춰 사이즈 자동조절됨 */
+    max-width: 1320px;
+    /* 화면 크기가 클수록 커지지만, 1320px보다 커지진 않는다,(최대크기) */
+    /* min-width: 1024px; */
+    /* 화면 크기가 작을수록 작아지지만, 1320px보다 커지진 않는다,(최소크기) */
+    /* 보통 최대크기와 최소크기를 같이 쓰는 일은 잘 없다 */
+    margin: 0 auto;
+}
+
+.rollingBanner img {
+    width: 100%;
+    height: auto;
+}
+
+.titleBax {
+    width: 1000px;
+    height: 60px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.titleBax .bar {
+    width: 350px;
+    height: 60px;
+    float: left;
+}
+
+.titleBax .bar img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.titleBax h3 {
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    float: left;
+}
+
+.event {
+    width: 920px;
+    height: 220px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.event .eve {
+    width: 300px;
+    height: 300px;
+    float: left;
+}
+
+.event .eve div {
+    width: 100%;
+    height: 160px;
+}
+
+.event>div:nth-child(2) {
+    margin: 0 10px;
+}
+
+.event .eve div img {
+    width: 100%;
+    height: auto;
+}
+
+.event .eve p {
+    width: 100%;
+    height: 60px;
+    font-weight: bold;
+    line-height: 60px;
+}

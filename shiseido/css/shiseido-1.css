@@ -1,0 +1,292 @@
+* {margin: 0; padding: 0;}
+a {text-decoration: none;}
+li {list-style: none;}
+img {display: block;}
+
+.outerheader {
+    background-color: black;
+    width: 100%;
+    height: 40px;
+}
+
+.outerheader .gnb {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.outerheader .gnb .login {
+    float: right;
+}
+
+.outerheader .gnb a {
+    color: white;
+    letter-spacing: -0.05em;
+    margin-left: 20px;
+    line-height: 30px;
+}
+
+.innerheader {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.innerheader .logoBox img {
+    margin: 10px auto;
+}
+
+.innerheader .lnb {
+    margin-bottom: 50px;
+}
+
+.innerheader .lnb ul {
+    float: left;
+}
+
+.innerheader .lnb div {
+    float: left;
+}
+
+.innerheader .lnb ul {
+    border-right: 2px solid black;
+}
+
+.innerheader .lnb ul li {
+    float: left;
+    font-weight: bold;
+    font-size: 14px;
+    margin: 5px 15px;
+    line-height: 16px;
+}
+
+
+.innerheader .lnb .search {
+    margin: 5px 0 0 15px;
+    border: 1px solid rgb(166, 166, 166);
+    border-radius: 2px;
+    width: 150px;
+    height: 14px;
+    padding: 2px 5px;
+}
+
+.innerheader .lnb .search p {
+    font-size: 10px;
+    float: left;
+}
+
+.innerheader .lnb .search i {
+    float: right;
+    color: #333;
+}
+
+
+/* --------------------header----------------- */
+
+
+/* --------------------mainVisual----------------- */
+
+.mainVisual img {
+    width: 1000px;
+    /* max-width: 1320px;
+    min-width: 960px; */
+    margin: 0 auto;
+    margin-bottom: 50px;
+}
+
+.rollingBanner {
+    width: 100%;
+}
+
+.rollingBanner img {
+    width: 100%;
+    max-width: 1320px;
+    min-width: 960px;
+    margin: 0 auto;
+}
+
+/* --------------------mainVisual----------------- */
+
+.conteinner {
+    width: 1000px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+
+
+.titleBox {
+    width: 1000px;
+    overflow: hidden;
+    height: 60px;
+}
+
+.titleBox .Bar {
+    float: left;
+    width: 350px;
+}
+
+.titleBox h3 {
+    width: 300px;
+    float: left;
+    text-align: center;
+    line-height: 60px;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+
+/* --------------------event----------------- */
+
+
+.event .bannerBox {
+    padding: 0 35px;
+}
+
+.event .eve{
+    width: 300px;
+    height: 250px;
+    float: left;
+    margin: 5px;
+}
+
+.event .eve p {
+    line-height: 40px;
+    font-weight: bold;
+}
+
+.event {
+    margin-bottom: px;
+}
+
+
+/* --------------------event----------------- */
+
+
+/* --------------------BestSeller----------------- */
+
+.BestSeller .productBox {
+    padding: 30px 0 50px;
+    /* border-bottom: 1px solid #333; */
+    overflow: hidden;
+}
+
+.BestSeller .productBox .product {
+    width: 180px;
+    height: 300px;
+    float: left;
+    overflow: hidden;
+    margin: 0 10px;
+    /* border: 1px solid #333;
+    box-sizing: border-box; */
+    position: relative;
+}
+
+.BestSeller .productBox .product img {
+    margin: 0 17.5px;
+}
+
+.BestSeller .productBox .product p {
+    text-align: center;
+    line-height: 25px;
+    letter-spacing: -0.025em;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.BestSeller .productBox .product a {
+    border: 1px solid #333;
+    box-sizing: border-box;
+    border-radius: 5px;
+    line-height: 35px;
+    text-align: center;
+    padding: 0 55px;
+    position: absolute;
+    bottom: 0px;
+    color: #333;
+}
+
+.BestSeller .productBox .product a:hover {
+    background-color: rgb(150, 150, 150);
+    color: white;
+    font-weight: bold;
+    border: none;
+}
+
+.News {
+    margin: 50px 0;
+}
+
+.News div {
+    margin: 0 20px 20px 0;
+    float: left;
+    width: 320px;
+}
+
+.News div img {
+    width: 100%;
+}
+
+.News div:nth-child(3),
+.News div:nth-child(6) {
+    margin-right: 0;
+}
+
+/* --------------------BestSeller----------------- */
+
+
+
+/* --------------------footer----------------- */
+
+.footer_top {
+    background-color: black;
+    color: white;
+    height: 50px;
+}
+
+.footer_top .fnb {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+.footer_top .fnb .fnb_left {
+    float: left;
+}
+.footer_top .fnb .fnb_right {
+    float: right;
+}
+
+.footer_top .fnb ul li {
+    float: left;
+    letter-spacing: -0.025em;
+    margin: 15px 0;
+    padding: 0 15px;
+    border-right: 1px solid #fff;
+}
+
+.footer_top .fnb ul li:last-child {
+    margin-right: 0;
+    border: none;
+}
+
+.footer_bottom {
+    background-color: rgb(179, 64, 64);
+}
+
+.footer_bottom .copywriter {
+    width: 1000px;
+    margin: 0 auto;
+    height: 30px;
+    border: 1px solid rgb(179, 64, 64);
+    box-sizing: border-box;
+    /* 무슨 영문인지 모르겠으나 border값이 없으면 float:left값이 제대로 먹히지 않는다 */
+}
+
+.footer_bottom .copywriter .left {
+    float: left;
+}
+.footer_bottom .copywriter .right {
+    float: right;
+}
+
+.footer_bottom .copywriter p {
+    color: white;
+}
